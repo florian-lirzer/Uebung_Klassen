@@ -3,10 +3,10 @@ public class Konto
     private String kontoinhaber;
     private double kontostand;
 
-    public void setInhaber(String kontoinhaber)
+    public Konto(String kontoinhaber)
     {
         this.kontoinhaber = kontoinhaber;
-        kontostand = 0;
+        this.kontostand = 0;
     }
 
     public void aufbuchen(double betrag)
