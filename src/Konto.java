@@ -11,7 +11,14 @@ public class Konto
 
     public void aufbuchen(double betrag)
     {
-        this.kontostand += betrag;
+        if (betrag > 0)
+        {
+            this.kontostand += betrag;
+        }
+        else
+        {
+            System.out.println("Betrag ungültig");
+        }
     }
 
     public void abbuchen(double betrag)
