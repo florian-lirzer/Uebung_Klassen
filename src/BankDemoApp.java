@@ -1,4 +1,4 @@
-public class KontoApp
+public class BankDemoApp
 {
     public static void main(String[] args)
     {
@@ -13,6 +13,8 @@ public class KontoApp
         florian_lirzer.abbuchen(200);
         florian_lirzer.print();
 
+        florian_lirzer.aufbuchen(6000);
         florian_lirzer.abbuchen(4000);
+        florian_lirzer.print();
     }
 }
