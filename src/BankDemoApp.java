@@ -2,7 +2,8 @@ public class BankDemoApp
 {
     public static void main(String[] args)
     {
-        Konto florian_lirzer = new Konto("Florian Lirzer");
+        int counter = 1;
+        Konto florian_lirzer = new Konto("Florian Lirzer", counter++);
 
         florian_lirzer.print();
 
@@ -16,7 +17,7 @@ public class BankDemoApp
         florian_lirzer.abbuchen(4000);
         florian_lirzer.print();
 
-        Konto susi = new Konto("Susi Sorglos");
+        Konto susi = new Konto("Susi Sorglos", counter++);
         susi.aufbuchen(100_000);
         susi.print();
     }

@@ -2,11 +2,13 @@ public class Konto
 {
     private String kontoinhaber;
     private double kontostand;
+    private int idNumber; //1....999_999
 
-    public Konto(String kontoinhaber)
+    public Konto(String kontoinhaber, int idNumber)
     {
         this.kontoinhaber = kontoinhaber;
         this.kontostand = 0;
+        this.idNumber = idNumber;
     }
 
     public void aufbuchen(double betrag)
@@ -35,6 +37,6 @@ public class Konto
 
     public void print()
     {
-        System.out.println(this.kontoinhaber + ": " + this.kontostand);
+        System.out.println(this.kontoinhaber + "(ID = " + this.idNumber + ")" + ": " + this.kontostand);
     }
 }
