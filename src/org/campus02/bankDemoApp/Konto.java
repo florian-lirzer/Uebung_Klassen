@@ -1,14 +1,17 @@
+package org.campus02.bankDemoApp;
+
 public class Konto
 {
     private String kontoinhaber;
     private double kontostand;
     private int idNumber; //1....999_999
+    public static int s_anzahlKonto = 10;
 
-    public Konto(String kontoinhaber, int idNumber)
+    public Konto(String kontoinhaber)
     {
         this.kontoinhaber = kontoinhaber;
         this.kontostand = 0;
-        this.idNumber = idNumber;
+        this.idNumber = ++s_anzahlKonto;
     }
 
     public void aufbuchen(double betrag)

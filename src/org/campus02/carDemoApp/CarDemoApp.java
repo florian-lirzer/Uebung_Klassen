@@ -1,3 +1,8 @@
+package org.campus02.carDemoApp;
+
+import org.campus02.bankDemoApp.Person;
+import org.campus02.carDemoApp.Car;
+
 public class CarDemoApp
 {
     public static void main(String[] args)

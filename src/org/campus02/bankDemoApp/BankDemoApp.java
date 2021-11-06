@@ -1,10 +1,12 @@
+package org.campus02.bankDemoApp;
+
 public class BankDemoApp
 {
     public static void main(String[] args)
     {
-        int counter = 1;
-        Konto florian_lirzer = new Konto("Florian Lirzer", counter++);
-
+        Konto.s_anzahlKonto = 100;
+        
+        Konto florian_lirzer = new Konto("Florian Lirzer");
         florian_lirzer.print();
 
         florian_lirzer.aufbuchen(1200);
@@ -17,7 +19,7 @@ public class BankDemoApp
         florian_lirzer.abbuchen(4000);
         florian_lirzer.print();
 
-        Konto susi = new Konto("Susi Sorglos", counter++);
+        Konto susi = new Konto("Susi Sorglos");
         susi.aufbuchen(100_000);
         susi.print();
     }

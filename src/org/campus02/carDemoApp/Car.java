@@ -1,3 +1,5 @@
+package org.campus02.carDemoApp;
+
 public class Car
 {
     public String manufacturer;
